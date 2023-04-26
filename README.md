@@ -1,4 +1,6 @@
-Hello Adverity Team 🙌
+<b>Hello Adverity Team</b> 🙌
+<br>
+
 Let me tell you a few things before you review my task:
 
 1. Before every test i create a new item in order not to depend from the app data.
