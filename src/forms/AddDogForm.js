@@ -19,14 +19,14 @@ const AddDogForm = props => {
 			}}
 		>
 			<label>Breed</label>
-			<input type="text" name="breed" value={dog.breed} onChange={handleInputChange} />
+			<input type="text" name="breed" test_id="breed" value={dog.breed} onChange={handleInputChange} />
 			<label>Nick</label>
-			<input type="text" name="nick" value={dog.nick} onChange={handleInputChange} />
+			<input type="text" name="nick" test_id="nick" maxlength="10" value={dog.nick} onChange={handleInputChange} />
 			<label>Price</label>
-			<input type="text" name="price" value={dog.price} onChange={handleInputChange} />
+			<input type="number" name="price" test_id="price" value={dog.price} onChange={handleInputChange} />
 			<label>Image</label>
-			<input type="text" name="url" value={dog.url} onChange={handleInputChange} />
-			<button>Add</button>
+			<input type="text" name="url" test_id="image" value={dog.url} onChange={handleInputChange} />
+			<button test_id="add">Add</button>
 		</form>
 	)
 }

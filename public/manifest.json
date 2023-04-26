@@ -1,6 +1,6 @@
 {
   "short_name": "React Application",
-  "name": "CRUD Dog Service",
+  "name": "CRUD FirstDog Service",
   "icons": [
     {
       "src": "favicon.ico",

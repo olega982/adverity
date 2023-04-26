@@ -15,12 +15,13 @@ const DogTable = props => (
       {props.dogs.length > 0 ? (
         props.dogs.map(dog => (
           <tr key={dog.id}>
-            <td>{dog.breed}</td>
-            <td>{dog.nick}</td>
-            <td>{dog.price}</td>
-              <td><img src={dog.url} width="150" height="100"></img></td>
+            <td test_id="item_breed">{dog.breed}</td>
+            <td test_id="item_nick">{dog.nick}</td>
+            <td test_id="item_price">{dog.price}</td>
+              <td><img test_id="item_img" src={dog.url} width="150" height="100"></img></td>
             <td>
               <button
+              test_id="edit"
                 onClick={() => {
                   props.editRow(dog)
                 }}
@@ -29,6 +30,7 @@ const DogTable = props => (
                 Edit
               </button>
               <button
+              test_id="delete"
                 onClick={() => props.deleteDog(dog.id)}
                 className="button muted-button"
               >
